@@ -1,29 +1,10 @@
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
 import java.util.logging.Logger;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class ArrayIndexerTest {
-//    @Test
-//    void it_randomly_dequeues_an_item_while_maintaining_sequential_array_indexing() {
-//        // Arrange
-//        ArrayIndexer indexer = new ArrayIndexer();
-//        indexer.enqueue("foo");
-//        indexer.enqueue("biz");
-//        indexer.enqueue("bazz");
-//        indexer.enqueue("bar");
-//
-//        // Act
-//        String dequeued = indexer.dequeue();
-//
-//        // Assert
-//        result = indexer.size();
-//        assertSame();
-//
-//    }
-
     @Test
     void it_enqueues_an_item_onto_the_data_structure() {
         ArrayIndexer indexer = new ArrayIndexer();
