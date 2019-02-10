@@ -3,19 +3,19 @@ import java.util.Random;
 public class ArrayIndexer {
 
     private final String[] storage;
-    private int count = 0;
+    private int arrayCount = 0;
 
     public ArrayIndexer() {
         this.storage = new String[10];
     }
 
     public void enqueue(String string) {
-        this.storage[count++] = string;
+        this.storage[arrayCount++] = string;
     }
 
     public String dequeue() {
-        int maxKey = count - 1;
-        int randomKey = randomArrayIndex(count--);
+        int maxKey = arrayCount - 1;
+        int randomKey = randomArrayIndex(arrayCount--);
         String string = storage[randomKey];
         storage[randomKey] = storage[maxKey];
         storage[maxKey] = null;
@@ -23,7 +23,7 @@ public class ArrayIndexer {
     }
 
     public int count() {
-        return count;
+        return arrayCount;
     }
 
     private int randomArrayIndex(int max) {
